@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_margin="1dp"
+    android:layout_height="wrap_content">
+    <ImageView android:id="@+id/video_keyframe"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"/>
+    <LinearLayout android:id="@+id/description_layout"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+        <TextView android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Title Sample Title Sample Title Sample Title Sample Title Sample"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <LinearLayout android:id="@+id/duration_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="Duration: "
+                android:textSize="16sp"/>
+            <TextView android:id="@+id/duration"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:text="1:30:00"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Views: "
+                android:textSize="16sp"/>
+            <TextView android:id="@+id/number_of_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2K"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
